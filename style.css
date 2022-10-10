@@ -1,16 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  height: 150vh;
+  width: 150vw;
+  top: -25%;
+  left: -25%;
+  background: center/cover no-repeat
+    url("https://images.unsplash.com/photo-1660995710465-71940611fc35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1841&q=80");
+  filter: blur(100px);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+
+.container > * {
+  display: block;
+  margin: 1rem;
+}
+
+.container h1 {
+  margin-bottom: 2rem;
+}
+
+input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.container button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem auto 0;
 }
